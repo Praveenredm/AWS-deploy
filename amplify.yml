@@ -5,7 +5,7 @@ frontend:
     preBuild:
       commands:
         - cd voicenote-ai
-        - npm ci
+        - npm install
     build:
       commands:
         - npm run build
