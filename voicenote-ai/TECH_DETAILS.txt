@@ -1,0 +1,24 @@
+VoiceNote AI - Technology Stack Overview
+
+1. Frontend Framework:
+   - React 18 (Vite-powered)
+   - TypeScript for type safety
+
+2. Styling & UI:
+   - Tailwind CSS: Used for all styling, including a custom glassmorphic design system.
+   - CSS Variables: Implemented a dual-theme system (Light/Dark mode) using CSS variables and Tailwind theme extensions.
+   - Framer Motion: Used for smooth entrance animations and the recording pulse effect.
+   - Lucide React: Providing the icon set (Mic, Sun, Moon, etc.).
+
+3. State Management:
+   - Zustand: Handles global application state (User authentication, Notes list, Theme preference).
+   - Persistence: Theme and basic app state are persisted using browser localStorage.
+
+4. Routing:
+   - React Router v6: Manages navigation between Landing Page, Login, and the Dashboard views.
+
+5. API & Database Status:
+   - Current State: The application currently uses Mock Services for all backend functionality.
+   - APIs: Mocked `authService`, `apiService` (for summaries), and `transcribeService`. No live external APIs are connected yet.
+   - Database: There is no live database connection (MongoDB/PostgreSQL/DynamoDB) active yet. Data is currently simulated in-memory and persisted locally in the browser for demonstration purposes.
+   - AWS Status: An `amplify.yml` exists, preparing the project for AWS Amplify deployment, but the actual cloud resources (Lambda, Transcribe, DynamoDB) have not been linked to the frontend code yet.
