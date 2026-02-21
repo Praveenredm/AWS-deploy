@@ -5,6 +5,7 @@ frontend:
     preBuild:
       commands:
         - cd voicenote-ai
+        - rm -rf node_modules package-lock.json
         - npm install
     build:
       commands:
